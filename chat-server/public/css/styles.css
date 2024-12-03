@@ -1,0 +1,108 @@
+/* Fuente Montserrat */
+body {
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Chat Container */
+.chat-container {
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header */
+.card-header {
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header .dark-mode-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Messages */
+.messages {
+    height: 400px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 60%;
+    word-wrap: break-word;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.message-left {
+    background-color: #007BFF;
+    color: white;
+    align-self: flex-start;
+    border-top-left-radius: 0;
+}
+
+.message-right {
+    background-color: #28a745;
+    color: white;
+    align-self: flex-end;
+    border-top-right-radius: 0;
+}
+
+/* Input Container */
+.input-container {
+    background-color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Notificaciones */
+.notification {
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+    margin: 10px 0;
+    transition: color 0.3s;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .chat-container {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .card-header {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .messages {
+    background-color: #121212;
+}
+
+body.dark-mode .message-left {
+    background-color: #0056b3;
+}
+
+body.dark-mode .message-right {
+    background-color: #1e7e34;
+}
+
+body.dark-mode .input-container {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .notification {
+    color: #cccccc;
+}
